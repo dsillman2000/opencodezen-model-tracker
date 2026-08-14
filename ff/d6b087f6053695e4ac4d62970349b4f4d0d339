@@ -1,0 +1,21 @@
+wrangler.toml
+  s_2f0335c569f04f::t_f88520e3d7bcdf 1
+.github/workflows/scrape.yml
+  s_2f0335c569f04f::t_64c2cd7c95a37d 42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ffd6b087f6053695e4ac4d62970349b4f4d0d339",
+  "prompts": {},
+  "sessions": {
+    "s_2f0335c569f04f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00275f86cffeHcySLWweNDuW0r",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
