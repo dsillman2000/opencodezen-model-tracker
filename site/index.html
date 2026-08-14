@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenCode Zen Model Pricing Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Zen Model Pricing Tracker</h1>
+      <span class="subtitle">Daily snapshots of <a href="https://opencode.ai/docs/zen/" style="color:#60a5fa">opencode.ai/docs/zen/</a></span>
+    </div>
+    <div>
+      <span class="subtitle" id="last-update"></span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="group">
+      <span style="font-size:11px;color:#6b7280;font-weight:500">PROVIDER</span>
+      <input type="checkbox" id="cb-claude" checked data-group="claude">
+      <label for="cb-claude"><span class="color-dot" style="background:#f97316"></span>Claude</label>
+      <input type="checkbox" id="cb-gpt" checked data-group="gpt">
+      <label for="cb-gpt"><span class="color-dot" style="background:#10b981"></span>GPT</label>
+      <input type="checkbox" id="cb-gemini" checked data-group="gemini">
+      <label for="cb-gemini"><span class="color-dot" style="background:#3b82f6"></span>Gemini</label>
+      <input type="checkbox" id="cb-grok" data-group="grok">
+      <label for="cb-grok"><span class="color-dot" style="background:#a855f7"></span>Grok</label>
+      <input type="checkbox" id="cb-deepseek" checked data-group="deepseek">
+      <label for="cb-deepseek"><span class="color-dot" style="background:#06b6d4"></span>DeepSeek</label>
+      <input type="checkbox" id="cb-glm" data-group="glm">
+      <label for="cb-glm"><span class="color-dot" style="background:#ec4899"></span>GLM</label>
+      <input type="checkbox" id="cb-minimax" data-group="minimax">
+      <label for="cb-minimax"><span class="color-dot" style="background:#f59e0b"></span>MiniMax</label>
+      <input type="checkbox" id="cb-kimi" data-group="kimi">
+      <label for="cb-kimi"><span class="color-dot" style="background:#6366f1"></span>Kimi</label>
+      <input type="checkbox" id="cb-qwen" data-group="qwen">
+      <label for="cb-qwen"><span class="color-dot" style="background:#14b8a6"></span>Qwen</label>
+      <input type="checkbox" id="cb-free" data-group="free">
+      <label for="cb-free"><span class="color-dot" style="background:#6b7280"></span>Free</label>
+    </div>
+    <div class="actions">
+      <button id="select-all">All</button>
+      <button id="select-none">None</button>
+    </div>
+    <label style="margin-left:auto">
+      <input type="checkbox" id="show-output"> Show output prices
+    </label>
+  </div>
+
+  <div id="main"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

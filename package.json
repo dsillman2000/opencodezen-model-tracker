@@ -1,0 +1,20 @@
+{
+  "name": "opencodezen-model-tracker",
+  "version": "1.0.0",
+  "description": "Daily snapshots of OpenCode Zen model pricing",
+  "type": "module",
+  "scripts": {
+    "collect": "node collector/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsillman2000/opencodezen-model-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dsillman2000/opencodezen-model-tracker/issues"
+  },
+  "homepage": "https://github.com/dsillman2000/opencodezen-model-tracker#readme",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  }
+}
