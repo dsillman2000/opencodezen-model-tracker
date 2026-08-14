@@ -19,6 +19,13 @@ const GROUPS = [
 
 const GROUP_MAP = Object.fromEntries(GROUPS.map(g => [g.key, g]));
 
+const EXCLUDED_IDS = new Set([
+  'gpt-5.5-pro',
+  'gpt-5.4-pro',
+  'claude-fable-5',
+  'claude-opus-4-1',
+]);
+
 function detectGroup(id) {
   if (id.endsWith('-free')) return 'free';
   if (['big-pickle','mimo-v2.5-free','hy3-free','laguna-s-2.1-free','nemotron-3-ultra-free','nemotron-3.5-lightning-free'].includes(id)) return 'free';
@@ -44,11 +51,15 @@ function render() {
     GROUPS.filter(g => document.getElementById(`cb-${g.key}`).checked).map(g => g.key)
   );
 
+  const allDates = snapshots.map(s => s.date).sort();
+  const dateMin = allDates[0];
+  const dateMax = allDates[allDates.length - 1];
   const allIds = [...new Set(snapshots.flatMap(s => s.models.map(m => m.id)))].sort();
   const series = [];
   const legendData = [];
 
   for (const id of allIds) {
+    if (EXCLUDED_IDS.has(id)) continue;
     const group = detectGroup(id);
     if (!enabledGroups.has(group)) continue;
     const grp = GROUP_MAP[group];
@@ -69,6 +80,7 @@ function render() {
       const out = t.output !== null && t.output !== undefined ? t.output : 0;
       data.push([snap.date, wIn * t.input + wOut * out]);
     }
+    data.sort((a, b) => (a[0] < b[0] ? -1 : a[0] > b[0] ? 1 : 0));
 
     if (data.length === 0) continue;
 
@@ -96,10 +108,14 @@ function render() {
     },
     tooltip: {
       trigger: 'item',
+      triggerOn: 'mousemove|click',
+      backgroundColor: '#1f2937',
+      borderColor: '#374151',
+      textStyle: { color: '#e5e7eb', fontSize: 11 },
       formatter: function (params) {
         const p = Array.isArray(params) ? params[0] : params;
-        if (!p || p.value[1] == null) return '';
-        return `<strong>${p.seriesName}</strong><br>$${Number(p.value[1]).toFixed(4)}`;
+        if (!p || p.value == null || p.value[1] == null) return '';
+        return `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:6px;vertical-align:middle"></span><strong>${p.seriesName}</strong><br>$${Number(p.value[1]).toFixed(4)}<br><span style="color:#6b7280;font-size:10px">${p.value[0]}</span>`;
       },
     },
     legend: {
@@ -125,6 +141,9 @@ function render() {
     },
     xAxis: {
       type: 'time',
+      min: dateMin,
+      max: dateMax,
+      boundaryGap: false,
       axisLabel: { color: '#9ca3af', fontSize: 11 },
       axisLine: { lineStyle: { color: '#374151' } },
       splitLine: { lineStyle: { color: '#1f2937' } },
