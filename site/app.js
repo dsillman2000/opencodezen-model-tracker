@@ -38,8 +38,8 @@ function detectGroup(id) {
 function render() {
   if (!snapshots || snapshots.length === 0) return;
 
-  const dates = snapshots.map(s => s.date);
-  const showOutput = document.getElementById('show-output').checked;
+  const wIn = parseFloat(document.getElementById('weight-in').value) || 0;
+  const wOut = parseFloat(document.getElementById('weight-out').value) || 0;
   const enabledGroups = new Set(
     GROUPS.filter(g => document.getElementById(`cb-${g.key}`).checked).map(g => g.key)
   );
@@ -59,50 +59,30 @@ function render() {
 
     const isFree = snapshots.some(s => s.models.find(m => m.id === id)?.free);
 
-    const datesIn = [];
-    const pricesIn = [];
-    const pricesOut = [];
+    const data = [];
 
     for (const snap of snapshots) {
       const m = snap.models.find(mm => mm.id === id);
       if (!m || !m.tiers || m.tiers.length === 0) continue;
       const t = m.tiers[0];
       if (t.input === null || t.input === undefined) continue;
-      datesIn.push(snap.date);
-      pricesIn.push(t.input);
-      if (showOutput) pricesOut.push(t.output !== null && t.output !== undefined ? t.output : null);
+      const out = t.output !== null && t.output !== undefined ? t.output : 0;
+      data.push([snap.date, wIn * t.input + wOut * out]);
     }
 
-    if (datesIn.length === 0) continue;
-
-    const lineStyleIn = isFree ? { type: 'dotted', width: 1.5 } : { width: 1.5 };
-    const lineStyleOut = { type: 'dashed', width: 1 };
+    if (data.length === 0) continue;
 
     series.push({
-      name: `${display} (in)`,
+      name: display,
       type: 'line',
-      data: datesIn.map((d, i) => [d, pricesIn[i]]),
+      data,
       connectNulls: false,
       symbol: 'none',
-      lineStyle: lineStyleIn,
+      lineStyle: isFree ? { type: 'dotted', width: 1.5 } : { width: 1.5 },
       itemStyle: { color: grp.color },
       emphasis: { focus: 'series' },
     });
-    legendData.push(`${display} (in)`);
-
-    if (showOutput && pricesOut.some(v => v !== null)) {
-      series.push({
-        name: `${display} (out)`,
-        type: 'line',
-        data: datesIn.map((d, i) => [d, pricesOut[i]]),
-        connectNulls: true,
-        symbol: 'none',
-        lineStyle: lineStyleOut,
-        itemStyle: { color: grp.color },
-        emphasis: { focus: 'series' },
-      });
-      legendData.push(`${display} (out)`);
-    }
+    legendData.push(display);
   }
 
   const option = {
@@ -153,8 +133,8 @@ function render() {
       splitLine: { lineStyle: { color: '#1f2937' } },
     },
     yAxis: {
-      type: 'log',
-      min: 0.01,
+      type: 'value',
+      min: 0,
       axisLabel: {
         color: '#9ca3af',
         fontSize: 11,
@@ -162,7 +142,7 @@ function render() {
       },
       axisLine: { lineStyle: { color: '#374151' } },
       splitLine: { lineStyle: { color: '#1f2937' } },
-      name: 'Price / 1M tokens (USD, log scale)',
+      name: 'Combined price / 1M tokens (USD)',
       nameTextStyle: { color: '#6b7280', fontSize: 11 },
     },
     dataZoom: [
@@ -196,7 +176,8 @@ async function init() {
   render();
 }
 
-document.getElementById('show-output').addEventListener('change', render);
+document.getElementById('weight-in').addEventListener('input', render);
+document.getElementById('weight-out').addEventListener('input', render);
 
 for (const g of GROUPS) {
   document.getElementById(`cb-${g.key}`).addEventListener('change', render);

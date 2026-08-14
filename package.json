@@ -4,6 +4,7 @@
   "description": "Daily snapshots of OpenCode Zen model pricing",
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "collect": "node collector/index.js"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "homepage": "https://github.com/dsillman2000/opencodezen-model-tracker#readme",
   "dependencies": {
     "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "vite": "^8.2.1"
   }
 }

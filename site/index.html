@@ -41,14 +41,17 @@
       <label for="cb-qwen"><span class="color-dot" style="background:#14b8a6"></span>Qwen</label>
       <input type="checkbox" id="cb-free" data-group="free">
       <label for="cb-free"><span class="color-dot" style="background:#6b7280"></span>Free</label>
+      <input type="checkbox" id="cb-other" data-group="other">
+      <label for="cb-other"><span class="color-dot" style="background:#9ca3af"></span>Other</label>
     </div>
     <div class="actions">
       <button id="select-all">All</button>
       <button id="select-none">None</button>
     </div>
-    <label style="margin-left:auto">
-      <input type="checkbox" id="show-output"> Show output prices
-    </label>
+    <span>
+      <label>w<sub>in</sub>: <input type="number" id="weight-in" value="1.0" step="0.1" min="0" max="10" class="weight-input"></label>
+      <label>w<sub>out</sub>: <input type="number" id="weight-out" value="0.5" step="0.1" min="0" max="10" class="weight-input"></label>
+    </span>
   </div>
 
   <div id="main"></div>

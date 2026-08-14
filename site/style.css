@@ -101,6 +101,20 @@ header .subtitle {
   font-size: 14px;
 }
 
+.weight-input {
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  width: 60px;
+  outline: none;
+}
+.weight-input:focus {
+  border-color: #3b82f6;
+}
+
 @media (max-width: 768px) {
   .controls {
     padding: 8px 12px;
