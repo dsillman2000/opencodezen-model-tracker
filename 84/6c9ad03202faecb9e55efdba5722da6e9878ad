@@ -1,0 +1,21 @@
+site/style.css
+  s_6d03c036bba97f::t_26c49d5f96446c 7
+  s_6d03c036bba97f::t_66ed7aebde9822 125
+  s_6d03c036bba97f::t_e695c2f887ee7c 93-94
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "846c9ad03202faecb9e55efdba5722da6e9878ad",
+  "prompts": {},
+  "sessions": {
+    "s_6d03c036bba97f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00214164dffe38zw2GnUQsf1Oc",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
