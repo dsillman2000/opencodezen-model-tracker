@@ -1,0 +1,35 @@
+site/app.js
+  s_ba3ccf569ca947::t_1b3bdffdc7c5bc 41-42,62,69-70,73,76,78,81,85,145
+  s_ba3ccf569ca947::t_ea12f9131cd33b 179-180
+  s_ba3ccf569ca947::t_aae3a88e0074cc 136-137
+site/index.html
+  s_ba3ccf569ca947::t_db85b5d06f162d 44-45
+  s_ba3ccf569ca947::t_0531458056b8f1 51
+  s_ba3ccf569ca947::t_5cea5941752d1e 52-54
+package.json
+  s_ba3ccf569ca947::t_1789a5b013c8ed 7
+  s_ba3ccf569ca947::t_1281de1860de34 20-22
+vite.config.js
+  s_ba3ccf569ca947::t_52ed1a355727cd 1-5,7-10
+  s_ba3ccf569ca947::t_cf8be6912b0fd8 6
+site/style.css
+  s_ba3ccf569ca947::t_10fe7d1e870998 104-117
+package-lock.json
+  s_ba3ccf569ca947::t_6887a211577ec5 12-58,61-289,366-375,456-488,532-823,885-966,973-999,1009-1086
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d1260bc57dc8767c6725e7b4a225a2b2c3c428b4",
+  "prompts": {},
+  "sessions": {
+    "s_ba3ccf569ca947": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0024bfe9fffeZLEUuGCyJDLWzQ",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
