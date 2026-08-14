@@ -1,0 +1,38 @@
+site/index.html
+  s_4c6685f777d7a0::t_5938bb4347a8f2 30,34,36,38,40,42,44
+AGENTS.md
+  s_76749e88d2514d::t_08af575cfdb6c4 1-23
+site/app.js
+  s_4c6685f777d7a0::t_0b48b208a44b7a 22-23,25-28
+  s_4c6685f777d7a0::t_973add2745c663 24
+  s_4c6685f777d7a0::t_7046376b63a09a 62
+  s_4c6685f777d7a0::t_fae33279e256e9 111,117-118
+  s_4c6685f777d7a0::t_b974cc4d34f5cc 112-114
+  s_4c6685f777d7a0::t_f0b92dcc70f182 83
+  s_4c6685f777d7a0::t_b8da624a8899f2 54-56
+  s_4c6685f777d7a0::t_3c87cec8a679b6 144-146
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "099180cee4352d582ee450f1e51e26c072d2e745",
+  "prompts": {},
+  "sessions": {
+    "s_4c6685f777d7a0": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_000156616ffe5WSQBtlbGa7aeQ",
+        "model": "minimax-m3"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    },
+    "s_76749e88d2514d": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00019219dffegGOeaSaLhMtRVP",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
