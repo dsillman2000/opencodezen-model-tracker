@@ -1,0 +1,41 @@
+package.json
+  s_2f0335c569f04f::t_f2a09f2c36e095 1-3,6,8-20
+  s_2f0335c569f04f::t_c7d207dfc2a61e 5,7
+  s_2f0335c569f04f::t_aeab5223078672 4
+collector/index.js
+  s_2f0335c569f04f::t_aeb20294f35c8d 1-205
+site/data.json
+  s_2f0335c569f04f::t_a1b711becdd1ea 1
+.github/workflows/scrape.yml
+  s_2f0335c569f04f::t_7b160b6a48eff7 1-57
+site/index.html
+  s_2f0335c569f04f::t_3d0f0a2861d034 1-23,44-58
+  s_2f0335c569f04f::t_d24475858dffaf 24-43
+site/style.css
+  s_2f0335c569f04f::t_3a8c810f5512d0 1-111
+data/snapshots.json
+  s_2f0335c569f04f::t_a1b711becdd1ea 1-1048
+site/app.js
+  s_2f0335c569f04f::t_6d3f3494a2e941 1-2,4-5,21-23,35-38,40,42,48-50,55,59,74-75,94,96,101-103,105-108,110-112,115-121,124-130,132-137,142-143,146,148-156,158-160,162-164,166-168,171-172,174-190,192-200,203-205,207-210,212-215,227
+  s_2f0335c569f04f::t_5301b00a424c43 3,6-20,24-34,39,41,43-47,51-54,56-58,60-73,76-93,95,97-100,104,109,113-114,122-123,131,138-141,144-145,147,157,161,165,169-170,173,191,201-202,206,211,216-226
+.gitignore
+  s_2f0335c569f04f::t_dd1673a38cd419 1-3
+package-lock.json
+  s_2f0335c569f04f::t_5cd12193d939bc 1-313
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "464e802840b00d1432241f240ef8b5215de54b05",
+  "prompts": {},
+  "sessions": {
+    "s_2f0335c569f04f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00275f86cffeHcySLWweNDuW0r",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
