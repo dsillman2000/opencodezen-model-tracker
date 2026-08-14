@@ -196,7 +196,7 @@ async function main() {
   console.log(`Wrote site/data.json`);
 
   console.log('Snapshot written. Changes detected.');
-  process.exit(1);
+  process.exit(0);
 }
 
 main().catch(err => {
