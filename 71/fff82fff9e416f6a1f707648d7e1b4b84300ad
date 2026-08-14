@@ -1,0 +1,19 @@
+site/CNAME
+  s_2f0335c569f04f::t_c260574588292a 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "71fff82fff9e416f6a1f707648d7e1b4b84300ad",
+  "prompts": {},
+  "sessions": {
+    "s_2f0335c569f04f": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_00275f86cffeHcySLWweNDuW0r",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "dsillman2000 <dsillman2000@yahoo.com>"
+    }
+  }
+}
