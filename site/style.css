@@ -92,6 +92,7 @@ header .subtitle {
   width: 100%;
   height: calc(100vh - 120px);
   min-height: 500px;
+  padding: 0 24px;
 }
 
 .error {

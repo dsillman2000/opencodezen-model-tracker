@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "collect": "node collector/index.js"
+    "collect": "node collector/index.js",
+    "backfill": "node backfill.js"
   },
   "repository": {
     "type": "git",

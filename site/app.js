@@ -77,7 +77,8 @@ function render() {
       type: 'line',
       data,
       connectNulls: false,
-      symbol: 'none',
+      symbol: 'circle',
+      symbolSize: 3,
       lineStyle: isFree ? { type: 'dotted', width: 1.5 } : { width: 1.5 },
       itemStyle: { color: grp.color },
       emphasis: { focus: 'series' },
@@ -94,15 +95,11 @@ function render() {
       textStyle: { fontSize: 16, color: '#e5e7eb', fontWeight: 500 },
     },
     tooltip: {
-      trigger: 'axis',
+      trigger: 'item',
       formatter: function (params) {
-        const date = params[0].axisValue;
-        let html = `<strong>${date}</strong><br>`;
-        for (const p of params) {
-          if (p.value[1] == null) continue;
-          html += `<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${p.color};margin-right:4px"></span> ${p.seriesName}: <strong>$${Number(p.value[1]).toFixed(4)}</strong><br>`;
-        }
-        return html;
+        const p = Array.isArray(params) ? params[0] : params;
+        if (!p || p.value[1] == null) return '';
+        return `<strong>${p.seriesName}</strong><br>$${Number(p.value[1]).toFixed(4)}`;
       },
     },
     legend: {
