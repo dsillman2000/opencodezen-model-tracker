@@ -84163,5 +84163,1103 @@
         "deprecated": null
       }
     ]
+  },
+  {
+    "date": "2026-09-04",
+    "models": [
+      {
+        "id": "big-pickle",
+        "display": "Big Pickle",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 10,
+            "output": 50,
+            "cachedRead": 1,
+            "cachedWrite": 12.5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-fable-5-1",
+        "display": "Claude Fable 5.1",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 10,
+            "output": 50,
+            "cachedRead": 0.25,
+            "cachedWrite": 12.5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 1,
+            "output": 5,
+            "cachedRead": 0.1,
+            "cachedWrite": 1.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-opus-4-5",
+        "display": "Claude Opus 4.5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 5,
+            "output": 25,
+            "cachedRead": 0.5,
+            "cachedWrite": 6.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-opus-4-6",
+        "display": "Claude Opus 4.6",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 5,
+            "output": 25,
+            "cachedRead": 0.5,
+            "cachedWrite": 6.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-opus-4-7",
+        "display": "Claude Opus 4.7",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 5,
+            "output": 25,
+            "cachedRead": 0.5,
+            "cachedWrite": 6.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 5,
+            "output": 25,
+            "cachedRead": 0.5,
+            "cachedWrite": 6.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-opus-5",
+        "display": "Claude Opus 5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 5,
+            "output": 25,
+            "cachedRead": 0.5,
+            "cachedWrite": 6.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-sonnet-4",
+        "display": "claude-sonnet-4",
+        "endpoint": null,
+        "sdk": null,
+        "tiers": null,
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-sonnet-4-5",
+        "display": "Claude Sonnet 4.5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "label": "≤ 200K tokens",
+            "input": 3,
+            "output": 15,
+            "cachedRead": 0.3,
+            "cachedWrite": 3.75
+          },
+          {
+            "label": "> 200K tokens",
+            "input": 6,
+            "output": 22.5,
+            "cachedRead": 0.6,
+            "cachedWrite": 7.5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 3,
+            "output": 15,
+            "cachedRead": 0.3,
+            "cachedWrite": 3.75
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 2,
+            "output": 10,
+            "cachedRead": 0.2,
+            "cachedWrite": 2.5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "deepseek-v4-flash",
+        "display": "DeepSeek V4 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": null,
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "deepseek-v4-flash-free",
+        "display": "deepseek-v4-flash-free",
+        "endpoint": null,
+        "sdk": null,
+        "tiers": null,
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "deepseek-v4-pro",
+        "display": "DeepSeek V4 Pro",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": null,
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3-flash",
+        "display": "Gemini 3 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3-flash",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 3,
+            "cachedRead": 0.05,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.1-pro",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "label": "≤ 200K tokens",
+            "input": 2,
+            "output": 12,
+            "cachedRead": 0.2,
+            "cachedWrite": null
+          },
+          {
+            "label": "> 200K tokens",
+            "input": 4,
+            "output": 18,
+            "cachedRead": 0.4,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.5-flash",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 1.5,
+            "output": 9,
+            "cachedRead": 0.15,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.5-flash-lite",
+        "display": "Gemini 3.5 Flash Lite",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.5-flash-lite",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 0.3,
+            "output": 2.5,
+            "cachedRead": 0.03,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.6-flash",
+        "display": "Gemini 3.6 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.6-flash",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 1.5,
+            "output": 7.5,
+            "cachedRead": 0.15,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.7-flash",
+        "display": "Gemini 3.7 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.7-flash",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 1.5,
+            "output": 7.5,
+            "cachedRead": 0.15,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gemini-3.8-flash",
+        "display": "Gemini 3.8 Flash",
+        "endpoint": "https://opencode.ai/zen/v1/models/gemini-3.8-flash",
+        "sdk": "@ai-sdk/google",
+        "tiers": [
+          {
+            "input": 1.5,
+            "output": 7.5,
+            "cachedRead": 0.15,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "glm-5",
+        "display": "GLM 5",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 1,
+            "output": 3.2,
+            "cachedRead": 0.2,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "May 14, 2026"
+      },
+      {
+        "id": "glm-5.1",
+        "display": "GLM 5.1",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 1.4,
+            "output": 4.4,
+            "cachedRead": 0.26,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "glm-5.2",
+        "display": "GLM 5.2",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 1.4,
+            "output": 4.4,
+            "cachedRead": 0.26,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5",
+        "display": "GPT 5",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.07,
+            "output": 8.5,
+            "cachedRead": 0.107,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5-codex",
+        "display": "GPT 5 Codex",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.07,
+            "output": 8.5,
+            "cachedRead": 0.107,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "July 23, 2026"
+      },
+      {
+        "id": "gpt-5-nano",
+        "display": "GPT 5 Nano",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0.05,
+            "output": 0.4,
+            "cachedRead": 0.005,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.1",
+        "display": "GPT 5.1",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.07,
+            "output": 8.5,
+            "cachedRead": 0.107,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.1-codex",
+        "display": "GPT 5.1 Codex",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.07,
+            "output": 8.5,
+            "cachedRead": 0.107,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "July 23, 2026"
+      },
+      {
+        "id": "gpt-5.1-codex-max",
+        "display": "GPT 5.1 Codex Max",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.25,
+            "output": 10,
+            "cachedRead": 0.125,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "July 23, 2026"
+      },
+      {
+        "id": "gpt-5.1-codex-mini",
+        "display": "GPT 5.1 Codex Mini",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0.25,
+            "output": 2,
+            "cachedRead": 0.025,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "July 23, 2026"
+      },
+      {
+        "id": "gpt-5.2",
+        "display": "GPT 5.2",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.75,
+            "output": 14,
+            "cachedRead": 0.175,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.2-codex",
+        "display": "GPT 5.2 Codex",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.75,
+            "output": 14,
+            "cachedRead": 0.175,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "July 23, 2026"
+      },
+      {
+        "id": "gpt-5.3-codex",
+        "display": "GPT 5.3 Codex",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.75,
+            "output": 14,
+            "cachedRead": 0.175,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.3-codex-spark",
+        "display": "GPT 5.3 Codex Spark",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.75,
+            "output": 14,
+            "cachedRead": 0.175,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.4",
+        "display": "GPT 5.4",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 272K tokens",
+            "input": 2.5,
+            "output": 15,
+            "cachedRead": 0.25,
+            "cachedWrite": null
+          },
+          {
+            "label": "> 272K tokens",
+            "input": 5,
+            "output": 22.5,
+            "cachedRead": 0.5,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.4-mini",
+        "display": "GPT 5.4 Mini",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0.75,
+            "output": 4.5,
+            "cachedRead": 0.075,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.4-nano",
+        "display": "GPT 5.4 Nano",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0.2,
+            "output": 1.25,
+            "cachedRead": 0.02,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.4-pro",
+        "display": "GPT 5.4 Pro",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 30,
+            "output": 180,
+            "cachedRead": 30,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.5",
+        "display": "GPT 5.5",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 272K tokens",
+            "input": 5,
+            "output": 30,
+            "cachedRead": 0.5,
+            "cachedWrite": null
+          },
+          {
+            "label": "> 272K tokens",
+            "input": 10,
+            "output": 45,
+            "cachedRead": 1,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.5-pro",
+        "display": "GPT 5.5 Pro",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 30,
+            "output": 180,
+            "cachedRead": 30,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.6-luna",
+        "display": "GPT 5.6 Luna",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 272K tokens",
+            "input": 0.2,
+            "output": 1.2,
+            "cachedRead": 0.02,
+            "cachedWrite": 0.25
+          },
+          {
+            "label": "> 272K tokens",
+            "input": 0.4,
+            "output": 1.8,
+            "cachedRead": 0.04,
+            "cachedWrite": 0.5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.6-sol",
+        "display": "GPT 5.6 Sol",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 272K tokens",
+            "input": 2,
+            "output": 10,
+            "cachedRead": 0.2,
+            "cachedWrite": 2.5
+          },
+          {
+            "label": "> 272K tokens",
+            "input": 4,
+            "output": 15,
+            "cachedRead": 0.4,
+            "cachedWrite": 5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "gpt-5.6-terra",
+        "display": "GPT 5.6 Terra",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 272K tokens",
+            "input": 2,
+            "output": 12,
+            "cachedRead": 0.2,
+            "cachedWrite": 2.5
+          },
+          {
+            "label": "> 272K tokens",
+            "input": 4,
+            "output": 18,
+            "cachedRead": 0.4,
+            "cachedWrite": 5
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "grok-4.5",
+        "display": "Grok 4.5",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 200K tokens",
+            "input": 2,
+            "output": 6,
+            "cachedRead": 0.3,
+            "cachedWrite": null
+          },
+          {
+            "label": "> 200K tokens",
+            "input": 4,
+            "output": 12,
+            "cachedRead": 0.6,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "grok-4.6",
+        "display": "Grok 4.6",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "label": "≤ 200K tokens",
+            "input": 2,
+            "output": 6,
+            "cachedRead": 0.5,
+            "cachedWrite": null
+          },
+          {
+            "label": "> 200K tokens",
+            "input": 4,
+            "output": 12,
+            "cachedRead": 1,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "grok-build-0.1",
+        "display": "Grok Build 0.1",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1,
+            "output": 2,
+            "cachedRead": 0.2,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "kimi-k2.5",
+        "display": "Kimi K2.5",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.6,
+            "output": 3,
+            "cachedRead": 0.1,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "August 5, 2026"
+      },
+      {
+        "id": "kimi-k2.6",
+        "display": "Kimi K2.6",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.95,
+            "output": 4,
+            "cachedRead": 0.16,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "kimi-k2.7-code",
+        "display": "Kimi K2.7 Code",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.95,
+            "output": 4,
+            "cachedRead": 0.19,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "kimi-k3",
+        "display": "Kimi K3",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 3,
+            "output": 15,
+            "cachedRead": 0.3,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "laguna-s-2.1-free",
+        "display": "laguna-s-2.1-free",
+        "endpoint": null,
+        "sdk": null,
+        "tiers": null,
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "ling-3.0-flash-fin-free",
+        "display": "Ling 3.0 Flash Fin Free",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "mimo-v2.5-free",
+        "display": "MiMo-V2.5 Free",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "minimax-m2.5",
+        "display": "MiniMax M2.5",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.3,
+            "output": 1.2,
+            "cachedRead": 0.06,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": "August 5, 2026"
+      },
+      {
+        "id": "minimax-m2.7",
+        "display": "MiniMax M2.7",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.3,
+            "output": 1.2,
+            "cachedRead": 0.06,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "minimax-m3",
+        "display": "MiniMax M3",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0.3,
+            "output": 1.2,
+            "cachedRead": 0.06,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "muse-spark-1.2",
+        "display": "Muse Spark 1.2",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 1.25,
+            "output": 4.25,
+            "cachedRead": 0.15,
+            "cachedWrite": null
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "muse-spark-1.2-contributor-free",
+        "display": "Muse Spark 1.2 Contributor Free",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "muse-spark-1.3-contributor-free",
+        "display": "Muse Spark 1.3 Contributor Free",
+        "endpoint": "https://opencode.ai/zen/v1/responses",
+        "sdk": "@ai-sdk/openai",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "nemotron-3-ultra-free",
+        "display": "Nemotron 3 Ultra Free",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "nemotron-3.5-lightning-free",
+        "display": "Nemotron 3.5 Lightning Free",
+        "endpoint": "https://opencode.ai/zen/v1/chat/completions",
+        "sdk": "@ai-sdk/openai-compatible",
+        "tiers": [
+          {
+            "input": 0,
+            "output": 0,
+            "cachedRead": 0,
+            "cachedWrite": null
+          }
+        ],
+        "free": true,
+        "deprecated": null
+      },
+      {
+        "id": "qwen3.5-plus",
+        "display": "Qwen3.5 Plus",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 0.2,
+            "output": 1.2,
+            "cachedRead": 0.02,
+            "cachedWrite": 0.25
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      },
+      {
+        "id": "qwen3.6-plus",
+        "display": "Qwen3.6 Plus",
+        "endpoint": "https://opencode.ai/zen/v1/messages",
+        "sdk": "@ai-sdk/anthropic",
+        "tiers": [
+          {
+            "input": 0.5,
+            "output": 3,
+            "cachedRead": 0.05,
+            "cachedWrite": 0.625
+          }
+        ],
+        "free": false,
+        "deprecated": null
+      }
+    ]
   }
 ]
